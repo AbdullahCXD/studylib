@@ -1,6 +1,6 @@
 {
   "name": "studylib",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Library that studies project installed libraries by using AI modules.",
   "main": "dist/index.js",
   "typings": "typings/index.d.ts",

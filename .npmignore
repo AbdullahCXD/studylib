@@ -2,3 +2,4 @@ pnpm-lock.yaml
 src
 test
 .gitignore
+.env
