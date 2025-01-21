@@ -1,0 +1,39 @@
+{
+  "name": "studylib",
+  "version": "1.0.0",
+  "description": "A Library that studies project installed libraries by using AI modules.",
+  "main": "dist/index.js",
+  "typings": "typings/index.d.ts",
+  "bin": {
+    "studylib": "./dist/bin/studylib.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "format": "prettier --write ./src/**/*.ts",
+    "dev": "pnpm build && pnpm format && node dist/bin/studylib.js",
+    "start": "cross-env NODE_ENV=production NODE_NO_WARNINGS=1 node dist/bin/studylib.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cli-color": "^2.0.4",
+    "cliui": "^8.0.1",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "figlet": "^1.8.0",
+    "listr2": "^8.2.5",
+    "lodash": "^4.17.21",
+    "openai": "^4.77.0",
+    "spinnies": "^0.5.1"
+  },
+  "devDependencies": {
+    "@types/cli-color": "^2.0.6",
+    "@types/figlet": "^1.7.0",
+    "@types/node": "^22.10.2",
+    "@types/spinnies": "^0.5.3",
+    "prettier": "^3.4.2",
+    "typescript": "^5.7.2"
+  }
+}
